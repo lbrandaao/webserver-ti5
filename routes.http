@@ -1,0 +1,82 @@
+POST http://localhost:3333/item
+Content-Type: application/json
+
+
+{
+    "uid": "A04C",
+    "description": "Televisão Samsung",
+    "safe": true
+}
+
+###
+
+POST http://localhost:3333/item
+Content-Type: application/json
+
+
+{
+    "uid": "32F8",
+    "description": "Televisão LG",
+    "safe": true
+}
+
+###
+
+GET http://localhost:3333/item
+
+###
+
+PUT http://localhost:3333/item/32F8
+Content-Type: application/json
+
+
+{
+    "description": "Televisão LG - Quarto",
+    "safe": true
+}
+
+###
+
+GET http://localhost:3333/item
+
+###
+
+PATCH  http://localhost:3333/item/32F8
+
+###
+
+GET http://localhost:3333/item
+
+###
+
+PATCH  http://localhost:3333/item/A04C
+
+###
+
+GET http://localhost:3333/item
+
+###
+
+DELETE http://localhost:3333/item/32F8
+
+###
+
+GET http://localhost:3333/item
+
+###
+
+POST http://localhost:3333/item
+Content-Type: application/json
+
+
+{
+    "uid": "FB61",
+    "description": "Microondas Brastemp - Cozinha",
+    "safe": true
+}
+
+###
+
+PATCH  http://localhost:3333/item/FB61
+
+###
